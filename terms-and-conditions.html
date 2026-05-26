@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="CozyView Terms and Conditions — terms of use for the CozyView app." />
+<meta name="theme-color" content="#D97B3A" />
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+<title>Terms and Conditions — CozyView</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #FFFFFF; --bg-grouped: #F2F2F4; --bg-elevated: #FFFFFF; --bg-chip: #F2F2F4;
+    --fg: #000000; --fg-muted: #8e8e93; --fg-tertiary: rgba(60,60,67,0.3);
+    --accent: #D97B3A; --accent-soft: rgba(217,123,58,0.10);
+    --border: rgba(60,60,67,0.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0F0F12; --bg-grouped: #000000; --bg-elevated: #1C1C1E; --bg-chip: #1C1C1E;
+      --fg: #FFFFFF; --fg-muted: rgba(235,235,245,0.6); --fg-tertiary: rgba(235,235,245,0.3);
+      --accent: #D97B3A; --accent-soft: rgba(217,123,58,0.16);
+      --border: rgba(255,255,255,0.10);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  .article { max-width: 740px; margin: 0 auto; padding: 0 24px; }
+
+  header { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--border); }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--fg); font-size: 17px; letter-spacing: -0.01em; }
+  .brand-mark { width: 30px; height: 30px; border-radius: 8px; object-fit: cover; display: block; box-shadow: 0 2px 6px rgba(217,123,58,0.25); }
+  .nav-links { display: flex; gap: 28px; }
+  .nav-links a { color: var(--fg-muted); font-size: 14px; font-weight: 500; }
+  .nav-links a:hover { color: var(--fg); text-decoration: none; }
+  .nav-links a.active { color: var(--fg); }
+  @media (max-width: 640px) { .nav-links { display: none; } }
+
+  .page-hero { padding: 72px 0 24px; text-align: center; }
+  .page-eyebrow { display: inline-flex; padding: 6px 14px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 600; margin-bottom: 20px; }
+  h1 { font-size: clamp(36px, 5vw, 52px); line-height: 1.1; font-weight: 800; letter-spacing: -0.03em; margin: 0 0 16px; }
+  .page-sub { font-size: 15px; color: var(--fg-muted); }
+
+  article h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.015em; margin: 44px 0 14px; }
+  article p { margin: 0 0 14px; color: var(--fg); }
+  article ul { margin: 0 0 16px; padding-left: 22px; color: var(--fg); }
+  article li { margin-bottom: 6px; }
+
+  .meta-card { background: var(--bg-grouped); border-radius: 14px; padding: 20px 24px; margin: 32px 0; font-size: 14.5px; color: var(--fg-muted); }
+  .meta-card strong { color: var(--fg); }
+
+  footer { padding: 56px 0 40px; border-top: 1px solid var(--border); margin-top: 80px; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+  @media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
+  .footer-col h4 { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fg-muted); margin: 0 0 14px; }
+  .footer-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .footer-col a { color: var(--fg); font-size: 14px; }
+  .footer-col a:hover { color: var(--accent); text-decoration: none; }
+  .footer-bottom { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 13px; color: var(--fg-muted); }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="/" class="brand">
+        <img class="brand-mark" src="/icons/icon-192.png" alt="" />
+        <span>CozyView</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#features">Features</a>
+        <a href="/#screenshots">Screenshots</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero container">
+      <span class="page-eyebrow">Legal</span>
+      <h1>Terms and Conditions</h1>
+      <p class="page-sub">Effective date: 2026-05-20</p>
+    </section>
+
+    <article class="article">
+      <p>By downloading or using the CozyView app, these terms automatically apply. Users cannot copy, modify, or extract source code from the app. You're not allowed to copy or modify the app, any part of the app, or our trademarks, or attempt derivative versions. All intellectual property belongs to CozyView.</p>
+      <p>CozyView reserves the right to make changes or charge for services at any time, with clear notification to users about what they're paying for.</p>
+      <p>The app stores personal data to provide its Service. Users must keep their phone and app access secure and should avoid jailbreaking or rooting devices, as this could compromise functionality and security.</p>
+
+      <h2>Third-Party Services</h2>
+      <p>The app uses third-party services with their own terms:</p>
+      <ul>
+        <li>Google Play Services</li>
+        <li>AdMob</li>
+        <li>Google Analytics for Firebase</li>
+        <li>Firebase Crashlytics</li>
+      </ul>
+
+      <h2>Web Content You Visit</h2>
+      <p>CozyView includes an in-app browser for third-party websites. You are solely responsible for the websites you choose to visit and for complying with each site's own terms of service. CozyView doesn't host, control, or endorse third-party content.</p>
+
+      <h2>Internet Connection and Data Charges</h2>
+      <p>CozyView cannot take responsibility for the app not working at full functionality if you don't have access to Wi-Fi. Users accept responsibility for mobile provider charges and data roaming fees incurred while using the app.</p>
+
+      <h2>Device Responsibility</h2>
+      <p>Users must maintain adequate device battery. CozyView cannot accept responsibility for service unavailability due to depleted battery.</p>
+
+      <h2>Updates and Termination</h2>
+      <p>Users must accept app updates when offered. CozyView may terminate the app without notice. Upon termination, the rights and licenses granted to you in these terms will end.</p>
+
+      <h2>Limitation of Liability</h2>
+      <p>The app and the Service are provided on an "as is" and "as available" basis without warranties. CozyView disclaims liability for indirect, incidental, or consequential damages.</p>
+
+      <h2>Changes to Terms and Conditions</h2>
+      <p>CozyView may update terms periodically and will post changes on this page.</p>
+
+      <h2>Contact</h2>
+      <p>Questions? Contact <a href="mailto:dev.creativesoft@gmail.com">dev.creativesoft@gmail.com</a>.</p>
+
+      <div class="meta-card">
+        <p style="margin: 0;"><strong>Effective date:</strong> 2026-05-20</p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="brand">
+            <img class="brand-mark" src="/icons/icon-192.png" alt="" />
+            <span>CozyView</span>
+          </a>
+          <p style="color: var(--fg-muted); font-size: 14px; margin: 12px 0 0; max-width: 280px;">A minimal launcher for the sites and videos you visit most.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="/support.html">Help center</a></li>
+            <li><a href="mailto:dev.creativesoft@gmail.com">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/terms-and-conditions.html">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 CozyView. All rights reserved.</span>
+        <span><a href="mailto:dev.creativesoft@gmail.com">dev.creativesoft@gmail.com</a></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
